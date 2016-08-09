@@ -1,0 +1,354 @@
+@fonts: "Myriad Pro", "Comic Sans MS";
+@filled-color: #3d6cb0;
+@blank-color: #e6e6e6;
+@default-font-color: black;
+@empty-color: white;
+@max-height: 100%;
+@max-width: 100%;
+@margin-empty: 0px;
+
+.progressbar-width(@width){
+	width: @width;
+}
+
+.background-color(@color){
+    background-color: @color;
+}
+
+body{
+	font-family: @fonts;
+	height: @max-height;
+}
+
+ul{
+    list-style-type: none;
+}
+
+label{
+	min-width: 100px;
+}
+
+footer{
+    clear: both;
+    height: 50px;
+    text-align: center;
+    bottom: 0px;
+    a{
+        background-image: url(footer.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        height: @max-height;
+        display: block;
+    }
+}
+
+.main{
+	font-family: @fonts;
+	width: 1000px;
+	height: @max-height;
+	margin: auto;
+}
+
+.first-column{
+	padding-left: 48px;
+}
+
+.second-column{
+	padding-left: 4.4%;
+}
+
+.small-blue-circle{
+	.background-color(@filled-color);
+    width: 54px;
+    height: 54px;
+    border-radius: 54px;
+	margin: 2px 0px 0px 2px;
+}
+
+.small-blue-ring{
+	.background-color(@empty-color);
+    width: 58px;
+    height: 58px;
+    border-radius: 58px;
+	border: 1px solid @filled-color;
+	float: left;
+	margin-left: -4px;
+	margin-top: -5px;
+}
+
+.clear-both{
+	clear: both;
+}
+
+.chapter-head{
+    height: 50px;
+	padding: 5px;
+	background-repeat: no-repeat;
+    h2{
+        overflow: hidden; 
+        &:after{
+            content: "";
+            display: inline-block;
+            height: 4px;
+            width: @max-width;
+            margin-right: -@max-width;
+            margin-top: -6px;
+            .background-color(@filled-color);
+            vertical-align: middle;
+        }
+    }
+}
+
+.chapter-title{
+	font-size: 33px;
+	max-width: @max-width;
+	color: @filled-color;
+	margin: 0px 6px 0px 69px;
+}
+
+
+/*main start*/
+
+.blue-circle{
+	.background-color(@filled-color);
+    width: 162px;
+    height: 162px;
+    border-radius: 162px;
+	margin: 13px 0px 0px 13px;
+}
+
+.blue-ring{
+    .background-color(@empty-color);
+    width: 188px;
+    height: 188px;
+    border-radius: 188px;
+	border: 1px solid @filled-color;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.main-head{
+    margin: 67px 0px 64px 0px;
+	text-align: center;
+    .main-text{
+        font-size: 50px;
+	    margin: @margin-empty;
+    }
+    .description-text{
+    	font-size: 42px;
+    	margin: @margin-empty;
+    	font-weight: normal;
+    }
+    .usual-text{
+    	font-size: 20px;
+    	margin: @margin-empty;
+    }
+}
+/*main end*/
+
+
+/*profile start*/
+
+.chapter-profile{
+    margin: 10px 0px;
+    .chapter-body{
+        .small-text{
+            font-size: 13px;
+        }
+    }
+}
+/*profile end*/
+
+
+/*contact start*/
+
+.chapter-contact{
+    margin: 10px 0px;
+    .chapter-body{
+        font-size: 17px;
+        div{
+            margin: 10px 0px 10px 0px;
+            .description-text{
+                margin: 0px;
+	            float: left;
+	            color: @filled-color;
+            }
+            input{
+                background: transparent;
+                border: 0px;
+                overflow: hidden;
+	            font-size: 16.6px;
+            }
+        }
+    }
+}
+/*contact end*/
+
+
+/*skills start*/
+
+.chapter-skills{
+    margin: 10px 0px;
+    .chapter-body{
+        .description-text{
+            font-size: 20px;
+            text-align: center;
+            margin: @margin-empty;
+        }
+        ul{
+            li{
+	            display: inline-block;
+            }
+        }
+    }
+}
+
+.li-blue-circle, .li-gray-circle{
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+	margin-right: 4px;
+}
+
+.li-blue-circle{
+    .background-color(@filled-color);
+}
+
+.li-gray-circle{
+    .background-color(@blank-color);
+}
+
+/*skills end*/
+
+
+/*education start*/
+
+.li-circle{
+	.background-color(black);
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+	margin: @margin-empty;
+	float: left;
+	margin-top: 5px;
+	margin-left: -25px;
+}
+
+.chapter-education{
+    margin: 11% 0%;
+    .li-element{
+        margin-top: 2%;
+        .li-head{
+            .description-text{
+                font-size: 21px;
+        	    margin: 0px;
+        	    font-weight: normal;
+                b{
+                    color: @filled-color;
+                }
+            }
+        }
+        .li-body{
+	    	.usual-text{
+	    		font-size: 13px;
+	    		margin: 0px;
+	    	}
+	    }
+    }
+}
+/*education end*/
+
+
+/*experience start*/
+
+.chapter-experience{
+    margin: 10px 0px;
+	.li-element{
+		.li-head{
+			.description-text{
+				font-size: 21px;
+				margin: @margin-empty;
+				margin-right: 5px; 
+				color: @default-font-color;
+			}
+		}
+	}
+}
+/*experience end*/
+
+
+/*software start*/
+.chapter-software{
+	margin: 10px 0px;
+}
+
+.chapter-column{
+	.chapter-column-content{
+        .description-text{
+			font-size: 20px;
+			font-weight: normal;
+			margin: 10px 0px 6px 0px;
+		}
+		div{
+			height: 15px;
+			background-color: @blank-color;
+			&:first-child{
+				height: 15px;
+				background-color: @filled-color;
+			}
+		}
+	}
+}
+
+.progressbar-width-10{
+	.progressbar-width(10%);
+}
+
+.progressbar-width-20{
+	.progressbar-width(20%);
+}
+
+.progressbar-width-30{
+	.progressbar-width(30%);
+}
+
+.progressbar-width-40{
+	.progressbar-width(40%);
+}
+
+.progressbar-width-50{
+	.progressbar-width(50%);
+}
+
+.progressbar-width-60{
+	.progressbar-width(60%);
+}
+
+.progressbar-width-70{
+	.progressbar-width(70%);
+}
+
+.progressbar-width-80{
+	.progressbar-width(80%);
+}
+
+.progressbar-width-90{
+	.progressbar-width(90%);
+}
+
+.progressbar-width-100{
+	.progressbar-width(100%);
+}
+
+/*software end*/
+
+.description-text, .chapter-title, .usual-text, .main-text{
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.chapter-body{
+	.description-text{
+		max-width: @max-width;
+	}
+}
