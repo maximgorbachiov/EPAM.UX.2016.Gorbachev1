@@ -142,6 +142,12 @@ footer a{
 	margin: 10px 0px;
 }
 
+.image-profile{
+	background-image: url("profile.png");
+	background-position: center;
+	background-repeat:no-repeat;
+}
+
 .chapter-profile .chapter-head{
 	/*background-image: url(profile.jpg);*/
 }
@@ -157,8 +163,10 @@ footer a{
 	margin: 10px 0px;
 }
 
-.chapter-contact .chapter-head{
-	/*background-image: url(contact.jpg);*/
+.image-contact{
+	background-image: url("contact.png");
+	background-position: center;
+	background-repeat:no-repeat;
 }
 
 .chapter-contact .chapter-body{
@@ -189,8 +197,10 @@ footer a{
 	margin: 10px 0px;
 }
 
-.chapter-skills .chapter-head{
-	/*background-image: url(skills.jpg);*/
+.image-skills{
+	background-image: url("skills.png");
+	background-position: center;
+	background-repeat:no-repeat;
 }
 
 .chapter-skills .chapter-body .description-text{
@@ -229,8 +239,10 @@ footer a{
 	margin: 11% 0%;
 }
 
-.chapter-education .chapter-head{
-	/*background-image: url(education.jpg);*/
+.image-education{
+	background-image: url("education.png");
+	background-position: center;
+	background-repeat:no-repeat;
 }
 
 .li-element{
@@ -270,8 +282,10 @@ footer a{
 	margin: 10px 0px;
 }
 
-.chapter-experience .chapter-head{
-	/*background-image: url(experience.jpg);*/
+.image-experience{
+	background-image: url("experience.png");
+	background-position: center;
+	background-repeat:no-repeat;
 }
 
 .chapter-experience .li-element .li-head .description-text{
@@ -288,8 +302,10 @@ footer a{
 	margin: 10px 0px;
 }
 
-.chapter-software .chapter-head{
-	/*background-image: url(software.jpg);*/
+.image-software{
+	background-image: url("software.png");
+	background-position: center;
+	background-repeat:no-repeat;
 }
 
 .chapter-column{

@@ -143,6 +143,18 @@ footer a{
 	margin: 10px 0px;
 }
 
+.image-profile{
+	background-image: url("profile.png");
+	background-position: center;
+	background-repeat:no-repeat;
+}
+
+.image-contact{
+	background-image: url("contact.png");
+	background-position: center;
+	background-repeat:no-repeat;
+}
+
 .chapter-contact .chapter-body{
 	font-size: 17px;
 }
@@ -199,6 +211,13 @@ footer a{
     border-radius: 16px;
 	margin-right: 4px;
 }
+
+.image-skills{
+	background-image: url("skills.png");
+	background-position: center;
+	background-repeat:no-repeat;
+}
+
 /*skills end*/
 
 
@@ -236,6 +255,12 @@ footer a{
 	font-size: 13px;
 	margin: 0px;
 }
+
+.image-education{
+	background-image: url("education.png");
+	background-position: center;
+	background-repeat:no-repeat;
+}
 /*education end*/
 
 
@@ -249,6 +274,12 @@ footer a{
 	margin: 0px;
 	margin-right: 5px; 
 	color: black;
+}
+
+.image-experience{
+	background-image: url("experience.png");
+	background-position: center;
+	background-repeat:no-repeat;
 }
 /*experience end*/
 
@@ -324,6 +355,12 @@ footer a{
 
 .chapter-column .chapter-column-content div,.chapter-column .chapter-column-content div :first-child{
 	height: 15px;
+}
+
+.image-software{
+	background-image: url("software.png");
+	background-position: center;
+	background-repeat:no-repeat;
 }
 /*software end*/
 
